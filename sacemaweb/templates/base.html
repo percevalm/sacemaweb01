@@ -21,6 +21,29 @@
   height: 100%;
   padding-top: 70px;
 }
+
+.bg-image {
+    position: relative;
+}
+.bg-image img {
+    display: block;
+    width: 100%;
+    max-width: 1200px; /* corresponds to max height of 450px */
+    margin: 0 auto;
+}
+.bg-image h1 {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: green;
+}
+.nav, .main {
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
   </style>
 
   <meta charset="utf-8">
@@ -73,7 +96,18 @@
 
   </div>
   <!-- /.container -->
-
+  <div class="container">
+      <div class="row-fluid">
+          <div class="span12">
+              <div class="nav">nav area</div>
+              <div class="bg-image">
+                  <img src="/static/images/DST_correct_logo1new.jpg">
+                   <h1>This is centered text.</h1>
+              </div>
+              <div class="main">main area</div>
+          </div>
+      </div>
+  </div>
 
 
 <div class="bottomdivs">
